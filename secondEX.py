@@ -1,7 +1,9 @@
-square = f'''\x1b[48;5;255m{'   '}\x1b[0m'''
+WHITE = 255
+
+square = f'''\x1b[48;5;{WHITE}m{'   '}\x1b[0m'''
 empthy = f'''\x1b[48;5;m{'   '}\x1b[0m'''
-s1 = square + empthy + square
-s2 = empthy + square + empthy
+str1 = square + empthy + square
+str2 = empthy + square + empthy
 while True:
-  print(s1)
-  print(s2)
+  print(str1)
+  print(str2)
